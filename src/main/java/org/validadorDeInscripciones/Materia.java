@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -14,5 +15,5 @@ import java.util.List;
 @NoArgsConstructor
 public class Materia {
     private String nombre;
-    private List<Materia> correlativas;
+    private List<Materia> correlativas = new ArrayList<>();
 }

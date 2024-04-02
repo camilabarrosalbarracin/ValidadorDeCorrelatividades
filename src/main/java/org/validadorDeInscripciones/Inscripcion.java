@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -14,7 +15,7 @@ import java.util.stream.Stream;
 @NoArgsConstructor
 public class Inscripcion {
     private Alumno alumno;
-    private List<Materia> materias;
+    private List<Materia> materias = new ArrayList<>();
 
     public boolean aprobada()  {
        // tomar la lista de materias de la inscripcion y por cada materia obtener las correlativas a esta y
