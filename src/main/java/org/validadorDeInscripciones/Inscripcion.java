@@ -28,11 +28,7 @@ public class Inscripcion {
         List<Materia> correlativasSinRepetidos = correlativas.distinct().toList();
         List<Materia> materiasAprobadasAlumno = alumno.getMateriasAprobadas();
 
-        if (materiasAprobadasAlumno.containsAll(correlativasSinRepetidos)) {
-            return true;
-        } else {
-            return false;
-        }
+        return materiasAprobadasAlumno.containsAll(correlativasSinRepetidos);
     }
 
 }
